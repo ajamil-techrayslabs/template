@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -47,19 +47,19 @@
         <div class="md:w-[45%]  w-full md:text-start text-center">
             <p>Free HTML CSS Template</p>
             <h1 class="xl:text-6xl lg:text-4xl text-3xl font-serif my-4 text-[#2c3e44]">Welcome to Modern Musician</h1>
-            <p class="leading-8">A free HTML CSS template for music creators, educators, and artists. Showcase your
+            <p class="md:leading-8 ">A free HTML CSS template for music creators, educators, and artists. Showcase your
                 work, share your
                 sound, and connect with your audience worldwide.</p>
             <div
                 class="music w-9/10 mt-10 py-4 px-8 bg-[#ffffff] border-gray-200 border-1 flex items-center gap-2 rounded-lg">
-                <div class="w-[44px] h-[44px] rounded-full bg-[#607b84] flex justify-center items-center">
-                    <i class="fa-solid fa-play" style="color: white;"></i>
+                <div class="play w-[44px] h-[44px] rounded-full bg-[#607b84] flex justify-center items-center cursor-pointer">
+                    <i class="icon fa-solid fa-play" style="color: white;"></i>
                 </div>
                 <div class="w-[86%]">
                     <div class="w-full flex justify-between">
                         <div>
-                            <p class="text-[#2c3e44] text-sm font-bold">Sample Track</p>
-                            <p class="text-sm">Demo Audio</p>
+                            <p class="text-[#2c3e44] md:text-sm text-xs font-bold">Sample Track</p>
+                            <p class="md:text-sm text-xs">Demo Audio</p>
                         </div>
                         <div class="volume flex gap-1">
                             <i class="fa-solid fa-volume-high"></i>
@@ -81,16 +81,32 @@
 
             </div>
             <div class="buttons mt-7">
-                <button class="primary-button">Portfolio</button>
-                <button class="secondary-button">Contact</button>
+                <a href="#portfolio">
+                    <button class="primary-button">Portfolio</button>
+                </a>
+                <a href="#contact">
+                    <button class="secondary-button">Contact</button>
+                </a>
             </div>
         </div>
 
         <div class="md:w-[45%] w-full flex flex-col items-center ">
             <img class="w-85 rounded-2xl shadow-2xl" src="./images/music.png" alt="">
-            <div class="h-10 w-[35%] border border-gray-200 bg-white mt-8 rounded-lg"></div>
+            <div class="h-10 w-[35%] border flex gap-1 border-gray-200 bg-white mt-8 justify-center rounded-lg">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+               
+            </div>
             <div
-                class="h-7 w-[25%] bg-[#e8f0f3] mt-8 rounded-full text-[12px] flex justify-center items-center font-bold  text">
+                class="h-7 w-[25%] bg-[#e8f0f3] mt-8 rounded-full sm:text-[12px] text-[8px] flex justify-center items-center font-bold  text">
                 NOW PLAYING</div>
             <p class="mt-2 text-[#2c3e44] font-serif text-lg">Echoes in Motion</p>
             <p class="mt-2 font-serif text-sm">12 tracks &#x2022; 47 min</p>
@@ -103,7 +119,8 @@
             </div>
             <div class="md:w-[53%] w-full py-20">
                 <h6 class="font-bold text-sm">ABOUT</h6>
-                <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">Crafting sound with purpose and passion</h1>
+                <h1 class="md:text-4xl text-3xl mt-2 text-[#2c3e44] font-serif mb-8">Crafting sound with purpose and
+                    passion</h1>
                 <p class="leading-7">With over a decade of experience in music production and education, I've had the
                     privilege of working
                     with emerging artists, established labels, and creative studios around the world.</p>
@@ -128,7 +145,7 @@
     <section id="services" class=" bg-[#fafcfd] w-full">
         <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">SERVICES</h6>
-            <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">How I can help</h1>
+            <h1 class="md:text-4xl text-3xl mt-2 text-[#2c3e44] font-serif mb-8">How I can help</h1>
             <div class="cards flex flex-wrap gap-8">
                 <div
                     class="card1 bg-[#ffffff] md:w-81.5 w-full h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
@@ -177,7 +194,7 @@
     <section id="portfolio" class=" bg-[#f0f5f7] w-full">
         <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">PORTFOLIO</h6>
-            <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">Featured Work</h1>
+            <h1 class="md:text-4xl text-3xl mt-2 text-[#2c3e44] font-serif mb-8">Featured Work</h1>
             <div class="cards flex-wrap flex gap-8">
                 <div
                     class="card2 bg-[#ffffff] md:w-81.5 w-full h-100 border-1 border-gray-200 rounded-lg hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
@@ -224,7 +241,7 @@
     <section id="testimonials" class=" bg-[#fafcfd] w-full">
         <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">TESTOMONIALS</h6>
-            <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">What people say</h1>
+            <h1 class="md:text-4xl text-3xl mt-2 text-[#2c3e44] font-serif mb-8">What people say</h1>
             <div class="grid md:grid-cols-2 grid-cols-1 grid-rows-2 gap-8">
                 <div
                     class="items bg-[#ffffff] border border-gray-200 rounded-lg p-8 flex gap-5  justify-between items-center">
@@ -307,7 +324,7 @@
 
                 </div>
             </div>
-            <div class="form md:w-[60%] w-full">
+            <form class="form md:w-[60%] w-full">
                 <input
                     class="w-[45%] py-2 px-4 mr-2 bg-white text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none"
                     type="text" id="name" name="name" placeholder="Your name">
@@ -317,28 +334,32 @@
                 <textarea
                     class="w-[calc(90%+12px)] py-2 px-4 bg-white text-sm text-black rounded-sm mb-5 focus:border focus:border-gray-900 outline-none"
                     type="text" id="message" name="message" placeholder="your message" rows="5"></textarea>
-                <button class="primary-button py-3">Send Message</button>
+                <button type="submit" class="primary-button py-3">Send Message</button>
 
-            </div>
+            </form>
         </div>
 
 
     </section>
     <section class="map bg-[#fafcfd] w-full">
         <div class="my-container py-25 md:flex-row flex-col flex justify-between">
-            <iframe
+            <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21123.092813692474!2d72.58421248658044!3d23.119902572420155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83002d1e49ab%3A0x3bfdecadee611b4c!2sSparrk%20%7C%20Premier%20Game%20Zone!5e1!3m2!1sen!2sin!4v1769265471971!5m2!1sen!2sin"
+                class="rounded-lg md:w-[320px] w-full mb-4" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117412.75696784044!2d72.594456!3d23.128241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83002d1e49ab%3A0x3bfdecadee611b4c!2sSparrk%20%7C%20Premier%20Game%20Zone!5e0!3m2!1sen!2sin!4v1769500560499!5m2!1sen!2sin"
                 class="rounded-lg md:w-[320px] w-full mb-4" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="md:w-[50%] w-full flex flex-col items-center">
                 <p class="text-sm font-bold">STAY CONNECTED</p>
                 <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-4">Join the creative journey</h1>
                 <p class="text-sm mb-6">Get updates on new releases, tutorials, and exclusive content. No spam.</p>
-                <div class="getemail">
+                <div class="w-full getemail text-center">
                     <input
-                        class="py-3 px-4 bg-white mb-3 text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none border border-gray-200 mr-4"
+                        class="py-3 px-4 bg-white mb-3 md:w-[50%] w-full text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none border border-gray-200 mr-4"
                         type="email" id="email" name="email" placeholder="Your email">
-                    <button class="primary-button py-3">Subscribe</button>
+                    <button class="primary-button py-3 md:w-[30%] w-full">Subscribe</button>
                 </div>
             </div>
         </div>
