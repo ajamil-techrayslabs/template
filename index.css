@@ -127,7 +127,20 @@ header{
    .url-design{
       @apply hover:text-[#2c3e44] hover:cursor-pointer;
    }
-
+   
 body{
    font-family: 'Sarabun' sans-serif;
+}
+
+@layer base{
+   .my-container{
+      @apply max-w-[1100px] m-auto px-5;
+   }
+   .primary-button{
+      @apply py-4 px-6 bg-[#607b84] text-white text-sm rounded-md mr-5 hover:bg-gray-600 hover:cursor-pointer;
+   }
+   .secondary-button{
+      @apply py-4 px-6  text-sm  border border-gray-200 rounded-md hover:border hover:border-gray-600 hover:cursor-pointer;
+   }
+
 }

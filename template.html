@@ -19,21 +19,34 @@
 
 <body class="bg-[#fafcfdf2] text-[#607b84]">
     <header class="w-full h-16 border-b-gray-200 border-1 sticky top-0 bg-[#fafcfd]">
-        <nav class="w-full h-full max-w-[1040px] m-auto flex justify-between items-center ">
+        <nav class="w-full h-full my-container flex justify-between items-center ">
             <a href="#" class="font-serif text-xl text-[#2c3e44]">Modern Musician</a>
-            <ul class="flex gap-8 text-sm ">
-                <li class="url-design">About</li>
-                <li class="url-design">Services</li>
-                <li class="url-design">Work</li>
-                <li class="url-design">Testimonials</li>
-                <li class="url-design">Connect</li>
+            <ul class="md:flex gap-8 text-sm hidden">
+                <li class="url-design"><a href="#about">About </a> </li>
+                <li class="url-design"><a href="#services">Services</a></li>
+                <li class="url-design"><a href="#portfolio">Work</a></li>
+                <li class="url-design"><a href="#testimonials">Testimonials</a></li>
+                <li class="url-design"><a href="#contact">Connect</a></li>
             </ul>
+            <div class="menu md:hidden block hover:cursor-pointer text-[#2c3e44]">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+
         </nav>
+        <div class="menu-options transform duration-500 -top-96 relative  z-10 p-8 bg-[#fafcfd]">
+            <ul class="flex flex-col gap-4 text-sm">
+                <li class="url-design"><a href="#about">About </a> </li>
+                <li class="url-design"><a href="#services">Services</a></li>
+                <li class="url-design"><a href="#portfolio">Work</a></li>
+                <li class="url-design"><a href="#testimonials">Testimonials</a></li>
+                <li class="url-design"><a href="#contact">Connect</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="max-w-[1040px] m-auto w-full mt-10 flex justify-between hero mb-23">
-        <div class="w-[45%] ">
+    <div class="my-container w-full mt-10 flex flex-col gap-4 justify-between md:flex-row hero mb-23">
+        <div class="md:w-[45%]  w-full md:text-start text-center">
             <p>Free HTML CSS Template</p>
-            <h1 class="text-6xl font-serif my-4 text-[#2c3e44]">Welcome to Modern Musician</h1>
+            <h1 class="xl:text-6xl lg:text-4xl text-3xl font-serif my-4 text-[#2c3e44]">Welcome to Modern Musician</h1>
             <p class="leading-8">A free HTML CSS template for music creators, educators, and artists. Showcase your
                 work, share your
                 sound, and connect with your audience worldwide.</p>
@@ -68,12 +81,12 @@
 
             </div>
             <div class="buttons mt-7">
-                <button class="py-4 px-6 bg-[#607b84] text-white text-sm rounded-md mr-5">Portfolio</button>
-                <button class="py-4 px-6  text-sm  border border-gray-200 rounded-md">Contact</button>
+                <button class="primary-button">Portfolio</button>
+                <button class="secondary-button">Contact</button>
             </div>
         </div>
 
-        <div class="w-[45%] flex flex-col items-center ">
+        <div class="md:w-[45%] w-full flex flex-col items-center ">
             <img class="w-85 rounded-2xl shadow-2xl" src="./images/music.png" alt="">
             <div class="h-10 w-[35%] border border-gray-200 bg-white mt-8 rounded-lg"></div>
             <div
@@ -83,12 +96,12 @@
             <p class="mt-2 font-serif text-sm">12 tracks &#x2022; 47 min</p>
         </div>
     </div>
-    <section class="about  bg-[#f0f5f7] w-full">
-        <div class="content max-w-[1040px] m-auto flex justify-between">
-            <div class="w-[40%] flex justify-center items-center ">
-                <img class="rounded-lg" src="./images/about.png" alt="about picture">
+    <section id="about" class="bg-[#f0f5f7] w-full">
+        <div class="content my-container md:flex-row flex-col flex justify-between">
+            <div class="md:w-[40%] w-full flex justify-center items-center ">
+                <img class="rounded-lg text-center md:w-full w-96" src="./images/about.png" alt="about picture">
             </div>
-            <div class="w-[53%] py-20">
+            <div class="md:w-[53%] w-full py-20">
                 <h6 class="font-bold text-sm">ABOUT</h6>
                 <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">Crafting sound with purpose and passion</h1>
                 <p class="leading-7">With over a decade of experience in music production and education, I've had the
@@ -112,13 +125,13 @@
         </div>
 
     </section>
-    <section class="help bg-[#fafcfd] w-full">
-        <div class="content max-w-[1040px] m-auto py-25">
+    <section id="services" class=" bg-[#fafcfd] w-full">
+        <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">SERVICES</h6>
             <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">How I can help</h1>
-            <div class="cards flex gap-8">
+            <div class="cards flex flex-wrap gap-8">
                 <div
-                    class="card1 bg-[#ffffff] w-81.5 h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
+                    class="card1 bg-[#ffffff] md:w-81.5 w-full h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
                     <div class="icon w-16 h-16 bg-[#e8f0f3] rounded-lg flex justify-center items-center">
                         <i class="fa-solid fa-music fa-xl text-[#5b7a8a]"></i>
                     </div>
@@ -131,7 +144,7 @@
                         More</button>
                 </div>
                 <div
-                    class="card1 bg-[#ffffff] w-81.5 h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
+                    class="card1 bg-[#ffffff] md:w-81.5 w-full h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
                     <div class="icon w-16 h-16 bg-[#e8f0f3] rounded-lg flex justify-center items-center">
                         <i class="fa-regular fa-camera fa-xl text-[#5b7a8a]"></i>
                     </div>
@@ -144,7 +157,7 @@
                         More</button>
                 </div>
                 <div
-                    class="card1 bg-[#ffffff] w-81.5 h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
+                    class="card1 bg-[#ffffff] md:w-81.5 w-full h-89 border-1 border-gray-200 rounded-lg hover:border-gray-500 p-8">
                     <div class="icon w-16 h-16 bg-[#e8f0f3] rounded-lg flex justify-center items-center">
                         <i class="fa-solid fa-people-group fa-xl text-[#5b7a8a]"></i>
                     </div>
@@ -161,13 +174,13 @@
         </div>
 
     </section>
-    <section class="feature bg-[#f0f5f7] w-full">
-        <div class="content max-w-[1040px] m-auto py-25">
+    <section id="portfolio" class=" bg-[#f0f5f7] w-full">
+        <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">PORTFOLIO</h6>
             <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">Featured Work</h1>
-            <div class="cards flex gap-8">
+            <div class="cards flex-wrap flex gap-8">
                 <div
-                    class="card2 bg-[#ffffff] w-81.5 h-100 border-1 border-gray-200 rounded-lg hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
+                    class="card2 bg-[#ffffff] md:w-81.5 w-full h-100 border-1 border-gray-200 rounded-lg hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
                     <div class="h-[50%] w-full">
                         <img class="object-cover rounded-t-lg w-full h-full" src="./images/image1.png" alt="image1">
                     </div>
@@ -180,7 +193,7 @@
                     </div>
                 </div>
                 <div
-                    class="card2 bg-[#ffffff] w-81.5 h-100 border-1 border-gray-200 rounded-lg  hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
+                    class="card2 bg-[#ffffff] md:w-81.5 w-full h-100 border-1 border-gray-200 rounded-lg  hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
                     <div class="h-[50%] w-full">
                         <img class="object-cover rounded-t-lg w-full h-full" src="./images/image2.png" alt="image2">
                     </div>
@@ -192,7 +205,7 @@
                     </div>
                 </div>
                 <div
-                    class="card2 bg-[#ffffff] w-81.5 h-100 border-1 border-gray-200 rounded-lg  hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
+                    class="card2 bg-[#ffffff] md:w-81.5 w-full h-100 border-1 border-gray-200 rounded-lg  hover:cursor-pointer hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
                     <div class="h-[50%] w-full">
                         <img class="object-cover rounded-t-lg w-full h-full" src="./images/image3.png" alt="image3">
                     </div>
@@ -208,11 +221,11 @@
         </div>
 
     </section>
-    <section class="feature bg-[#fafcfd] w-full">
-        <div class="content max-w-[1040px] m-auto py-25">
+    <section id="testimonials" class=" bg-[#fafcfd] w-full">
+        <div class="content my-container py-25">
             <h6 class="text-sm font-bold font-serif ">TESTOMONIALS</h6>
             <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-8">What people say</h1>
-            <div class="grid grid-cols-2 grid-rows-2 gap-8">
+            <div class="grid md:grid-cols-2 grid-cols-1 grid-rows-2 gap-8">
                 <div
                     class="items bg-[#ffffff] border border-gray-200 rounded-lg p-8 flex gap-5  justify-between items-center">
                     <div class="profile w-[45%] flex flex-col justify-center items-center gap-2">
@@ -263,6 +276,81 @@
         </div>
 
     </section>
+    <section id="contact" class=" bg-[#e8f0f3] w-full">
+        <div class="my-container py-25 md:flex-row flex-col gap-4 flex justify-between">
+            <div class="md:w-[30%] w-full">
+                <h6 class="text-sm font-bold ">GET IN TOUCH</h6>
+                <h1 class="text-3xl mt-2 text-[#2c3e44] font-serif mb-4">Let's work together</h1>
+                <p class="text-md leading-6 mb-4">Have a project in mind? Send me a message and I'll get back to you
+                    soon.</p>
+                <div class="links w-full flex gap-3">
+                    <div
+                        class="youtube w-[40px] h-[40px] hover:cursor-pointer text-black hover:text-white hover:bg-[#607b84] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-brands fa-youtube "></i>
+                    </div>
+                    <div
+                        class="youtube w-[40px] h-[40px] text-black hover:text-white hover:cursor-pointer hover:bg-[#607b84] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                    <div
+                        class="youtube w-[40px] h-[40px] text-black hover:text-white hover:cursor-pointer hover:bg-[#607b84] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div
+                        class="youtube w-[40px] h-[40px] text-black hover:text-white hover:cursor-pointer hover:bg-[#607b84] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div
+                        class="youtube w-[40px] h-[40px] text-black hover:text-white hover:cursor-pointer hover:bg-[#607b84] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form md:w-[60%] w-full">
+                <input
+                    class="w-[45%] py-2 px-4 mr-2 bg-white text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none"
+                    type="text" id="name" name="name" placeholder="Your name">
+                <input
+                    class="w-[45%] py-2 px-4 bg-white mb-3 text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none"
+                    type="email" id="email" name="email" placeholder="Your email">
+                <textarea
+                    class="w-[calc(90%+12px)] py-2 px-4 bg-white text-sm text-black rounded-sm mb-5 focus:border focus:border-gray-900 outline-none"
+                    type="text" id="message" name="message" placeholder="your message" rows="5"></textarea>
+                <button class="primary-button py-3">Send Message</button>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="map bg-[#fafcfd] w-full">
+        <div class="my-container py-25 md:flex-row flex-col flex justify-between">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21123.092813692474!2d72.58421248658044!3d23.119902572420155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83002d1e49ab%3A0x3bfdecadee611b4c!2sSparrk%20%7C%20Premier%20Game%20Zone!5e1!3m2!1sen!2sin!4v1769265471971!5m2!1sen!2sin"
+                class="rounded-lg md:w-[320px] w-full mb-4" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="md:w-[50%] w-full flex flex-col items-center">
+                <p class="text-sm font-bold">STAY CONNECTED</p>
+                <h1 class="text-4xl mt-2 text-[#2c3e44] font-serif mb-4">Join the creative journey</h1>
+                <p class="text-sm mb-6">Get updates on new releases, tutorials, and exclusive content. No spam.</p>
+                <div class="getemail">
+                    <input
+                        class="py-3 px-4 bg-white mb-3 text-sm text-black rounded-sm focus:border focus:border-gray-900 outline-none border border-gray-200 mr-4"
+                        type="email" id="email" name="email" placeholder="Your email">
+                    <button class="primary-button py-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="border border-t-gray-200">
+        <div class="my-container py-10  flex justify-between text-sm">
+            <p>&copy; 2026 Modern Musician</p>
+            <p>Designed by Aftab</p>
+        </div>
+
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
