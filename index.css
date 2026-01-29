@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 .url-design {
    @apply hover:text-[#2c3e44] hover:cursor-pointer;
 }
@@ -8,23 +10,30 @@ body {
    font-family: 'Sarabun' sans-serif;
 }
 
+
 .wave{
    height: 40px;
    width: 4px;
    background-color: rgb(87, 87, 87);
-   animation: wave 1.5s ease-in infinite alternate;
+   animation: wave 0.5s ease-in infinite alternate;
    position: relative;
    bottom: 10px;
 }
 @keyframes wave {
-  0%,
-  40%,
-  100% {
-    transform: scaleY(0.3);
+  0%{
+     transform: scaleY(0.25);
   }
-  20% {
+ 
+  40%{
+     transform: scaleY(0.75);
+  }
+   20% {
+    transform: scaleY(0.5);
+  }
+  100% {
     transform: scaleY(1);
   }
+  
 }
 
 .wave:nth-child(2) {
@@ -64,4 +73,8 @@ body {
       @apply py-4 px-6 text-sm border border-gray-200 rounded-md hover:border hover:border-gray-600 hover:cursor-pointer;
    }
 
+}
+
+#seek-move::before{
+  background-color: red;
 }
