@@ -64,15 +64,26 @@ music.addEventListener("timeupdate",(e)=>{
 
 })
 seekTrack.addEventListener("click",(e)=>{
-    const percetage=(e.offsetX/e.target.getBoundingClientRect().width)*100
+    const percetage=(e.offsetX/e.currentTarget.getBoundingClientRect().width)*100
     seekMove.style.left=percetage+"%";
     music.currentTime=music.duration*(percetage/100)
 })
 // volumn seekbar
-
 volumnTrack.addEventListener("click",(e)=>{
-    const percetage=(e.offsetX/e.target.getBoundingClientRect().width)*100
+    const percetage=(e.offsetX/e.currentTarget.getBoundingClientRect().width)*100
     volumnMove.style.left=percetage+"%";
     music.volume=percetage/100;
     volumeProgress.style.width=(music.volume*100)+'%'
 })
+
+// note 1 : current target and target is different
+// note 2 : stopPropogation method can be used to prevent child element events occuring
+//  making active bar show
+// const allLinks=document.querySelectorAll(".links")
+// allLinks.forEach((link)=>{
+//     link.addEventListener("click", ()=>{
+//         allLinks.forEach((a)=>a.classList.remove("underline"));
+//         link.classList.add("underline");
+//     })
+
+// })

@@ -1,18 +1,27 @@
 @import "tailwindcss";
-
-
-
 .url-design {
    @apply hover:text-[#2c3e44] hover:cursor-pointer;
 }
 
 body {
-   font-family: 'Sarabun' sans-serif;
+   /* font-family: 'Sarabun' sans-serif; */
+   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   /* font-family: "Blinker", sans-serif; */
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@theme{
+  --font-primaryFont: "Blinker", sans-serif;
+  --font-secondaryFont: serif;
+  --color-primary:#ffff;
 
+}
+.active{
+    /* Add whatever CSS style will make your link look active. The example below (in my case) */
+    @apply block py-2 pl-3 pr-4 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 underline;
+}
 .wave{
-   height: 40px;
+   
    width: 4px;
    background-color: rgb(87, 87, 87);
    animation: wave 0.5s ease-in infinite alternate;
@@ -35,7 +44,6 @@ body {
   }
   
 }
-
 .wave:nth-child(2) {
   animation-delay: 0.1s;
 }
@@ -62,19 +70,15 @@ body {
 }
 @layer base {
    .my-container {
-      @apply max-w-[1100px] m-auto px-5;
+      @apply max-w-[1090px] m-auto px-5;
    }
 
    .primary-button {
-      @apply py-4 px-6 bg-[#607b84] text-white text-sm rounded-md mr-5 hover:bg-gray-600 hover:cursor-pointer;
+      @apply py-4 px-6 bg-[#607b84] text-white text-sm rounded-md mr-5 hover:bg-[#4d6168] hover:cursor-pointer;
    }
 
    .secondary-button {
       @apply py-4 px-6 text-sm border border-gray-200 rounded-md hover:border hover:border-gray-600 hover:cursor-pointer;
    }
 
-}
-
-#seek-move::before{
-  background-color: red;
 }
